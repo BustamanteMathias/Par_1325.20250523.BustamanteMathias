@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>810</x><y>180</y><w>330</w><h>270</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>630</x><y>200</y><w>330</w><h>270</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
 Entidades::Nave
 /{Abstract}/
 --
@@ -16,7 +16,7 @@ Entidades::Nave
 /+iniciarExploracion(void): String/
 +compareTo(Nave): int
 +equals(Object): boolean
-+ordenarCriterio(List&lt;Nave&gt;, Comparator&lt;Nave&gt;): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>180</y><w>240</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
++ordenarCriterio(List&lt;Nave&gt;, Comparator&lt;Nave&gt;): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>200</y><w>240</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
 Entidades::Carguero
 /{Public}/
 --
@@ -30,12 +30,12 @@ _-capacidadCarga: int_
 *Metodos*
 +Carguero(String, int, int, int): Carguero
 +iniciarExploracion(void): String
-+toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>540</y><w>180</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
++toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>560</y><w>180</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
 Entidades::ETipoExploracion
 --
 CARTOGRAFIA
 INVESTIGACION
-CONTACTO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>220</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>530</y><w>300</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
+CONTACTO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>240</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>550</y><w>300</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
 Entidades::CruceroEstelar
 /{Public}/
 --
@@ -49,7 +49,7 @@ _-capacidadDePasajeros: int_
 *Metodos*
 +CruceroEstelar(String, int, int, int): CruceroEstelar
 +iniciarExploracion(void): String
-+toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>530</y><w>410</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
++toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>550</y><w>410</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
 Entidades::NaveExploracion
 /{Public}/
 --
@@ -63,4 +63,11 @@ _-tipoExploracion: ETipoExploracion_
 *Metodos*
 +NaveExploracion(String, int, int, ETipoExploracion): NaveExploracion
 +iniciarExploracion(void): String
-+toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>440</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>440</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>570</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element></diagram>
++toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>460</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>460</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>590</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>240</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>1060</x><y>210</y><w>170</w><h>90</h></coordinates><panel_attributes>Interface::Comparable&lt;T&gt;
+--
++compareTo(Nave n): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>980</x><y>310</y><w>330</w><h>100</h></coordinates><panel_attributes>Interface::Comparator&lt;T&gt;
+--
++comparing(Nave n::getAnioDeLanzamiento()): int
++comparing(Nave n::getCapacidadDeTripulacion()): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1240</x><y>320</y><w>90</w><h>40</h></coordinates><panel_attributes>Usado en 
+clase Nave
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>
