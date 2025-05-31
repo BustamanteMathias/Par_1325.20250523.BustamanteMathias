@@ -68,6 +68,7 @@ public class ManejadorDeDatos {
     public static String getString(String msj, String msgError) {
         String buffer;
         do {
+            s.nextLine();
             System.out.print(msj);
             buffer = s.nextLine().trim();
             if (buffer.isEmpty()) {

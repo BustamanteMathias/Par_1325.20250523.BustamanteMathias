@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>810</x><y>180</y><w>330</w><h>270</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
+Entidades::Nave
+/{Abstract}/
+--
+*Atributos*
+#nombre: String
+#capacidadDeTripulacion: int
+#anioDeLanzamiento: int
+--
+*Getters y Setters*
++getCapacidadDeTripulacion(void): int
++getAnioDeLanzamiento(void): int
+--
+*Metodos*
+#Nave(String, int, int): Nave
+/+iniciarExploracion(void): String/
++compareTo(Nave): int
++equals(Object): boolean
++ordenarCriterio(List&lt;Nave&gt;, Comparator&lt;Nave&gt;): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>180</y><w>240</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
+Entidades::Carguero
+/{Public}/
+--
+*Atributos*
+_-capacidadCarga: int_
+--
+*Getters y Setters*
++getcapacidadCarga(void): int
++setcapacidadCarga(int): void
+--
+*Metodos*
++Carguero(String, int, int, int): Carguero
++iniciarExploracion(void): String
++toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>540</y><w>180</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Entidades::ETipoExploracion
+--
+CARTOGRAFIA
+INVESTIGACION
+CONTACTO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>220</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>530</y><w>300</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
+Entidades::CruceroEstelar
+/{Public}/
+--
+*Atributos*
+_-capacidadDePasajeros: int_
+--
+*Getters y Setters*
++getCapacidadDePasajeros(void): int
++setCapacidadDePasajeros(int): void
+--
+*Metodos*
++CruceroEstelar(String, int, int, int): CruceroEstelar
++iniciarExploracion(void): String
++toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>530</y><w>410</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Entidad&gt;&gt;
+Entidades::NaveExploracion
+/{Public}/
+--
+*Atributos*
+_-tipoExploracion: ETipoExploracion_
+--
+*Getters y Setters*
++getTipoExploracion(void): ETipoExploracion
++setTipoExploracion(ETipoExploracion): void
+--
+*Metodos*
++NaveExploracion(String, int, int, ETipoExploracion): NaveExploracion
++iniciarExploracion(void): String
++toString(void): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>440</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>440</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>570</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element></diagram>
